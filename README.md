@@ -1,7 +1,7 @@
-# Project title
+# COMP 1110 - Everyday Calculator
 
 #### Video demo: <SpectraVideo URL>
-#### Team: name, name, Jacob Feser — COMP 1110, Fall 2026
+#### Team: Tadiwanashe Dondo, Munashe Isaac Chapoka, Jacob Feser — COMP 1110, Fall 2026
 #### Repository: <https://github.com/JabicZF/COMP1110-Python-Project>
 
 ## Description
