@@ -92,6 +92,7 @@ def LoanInterest():
     """Function # 2: The Loan Interest Calculator
     Author: Tadiwanashe Dondo
     """
+    print(1)
 
 def UnitConverter():
     """Function # 3: The Unit Converter
