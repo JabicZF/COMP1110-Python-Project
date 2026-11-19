@@ -100,7 +100,7 @@ def UnitConverter():
 
 def CarDetails():
     """Function # 4: The Useful Car Details Calculator
-    Author: Munashe
+    Author: Munashe Chapoka
     """
 
 def CurrencyConverter():
@@ -110,13 +110,13 @@ def CurrencyConverter():
 
 def Paint():
     """Function # 6: The Paint (Area) Calculator
-    Author: Munashe
+    Author: Munashe Chapoka
     """
 
 def Discount():
     """Function # 7: The Discount Calculator
-    Author: Munashe
-    """
+    Author: Munashe Chapoka
+    """ 
 
 def ElectricityCost():
     """Function # 8: The Electricity Cost Calculator
