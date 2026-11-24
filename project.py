@@ -20,7 +20,7 @@ def main():
     print("Select an Option (Type the Option Number to use that function):\n 1. [underline]L[/underline]oan Interest Calculator\n 2. [underline]U[/underline]nit Converter\n 3. u[underline]S[/underline]eful Car Details Calculator\n 4. [underline]C[/underline]urrency Converter\n 5. [underline]P[/underline]aint Area Calculator\n 6. [underline]D[/underline]iscount Calcuator\n 7. [underline]E[/underline]lectricity Cost Calcuator\n 0. e[underline]X[/underline]it")
     inputcode = "1"
     while True:
-        inputcode = input("Code: ")
+        inputcode = input("Code: ").upper()
         match inputcode:
             case 'X':
                 print("Exiting Program, Thank you for using [bold]The Everyday Calculator[/bold]")
@@ -57,11 +57,11 @@ def main():
             case 'C':
                 print("Currency Converter Selected")
                 Log(1,"Menu","{inputcode}, CC")
-                CurrencyConverter
+                CurrencyConverter()
             case '4':
                 print("Currency Converter Selected")
                 Log(1,"Menu","{inputcode}, CC")
-                CurrencyConverter
+                CurrencyConverter()
             case 'P':
                 print("Paint Area Calculator Selected")
                 Log(1,"Menu","{inputcode}, PAC")
@@ -140,13 +140,13 @@ def CurrencyConverter():
                     workingdic = (codessplitup[i])
                     print(f"ISO code for {workingdic["name"]} is {workingdic["code"]}\nAsset Type: {workingdic["type"]}\n")
                 print(f"To see this list again, type \"help\" again. Or, enter a source Currency Code.")
-                return(None)
+                return(None,None)
             elif (inputone == "x"):
                 return(inputone,)
             else:
                 if (checkcurrency(inputone) == False):
                     print("Please enter a valid ISO Code. \nIf you require a list of ISO codes, type \"help\"")
-                    return(None)
+                    return(None,None)
                 else:
                     inputonesymbol = getcurrencysymbol(inputone)
                     return(inputone,inputonesymbol)
@@ -154,7 +154,7 @@ def CurrencyConverter():
             inputtwo = input("Target Currency (ISO Code): ").strip().lower()
             if (checkcurrency(inputtwo) == False):
                 print("Please enter a valid ISO Code. \nIf you require a list of ISO codes, type \"help\"")
-                return(None)
+                return(None,None)
             else:
                 inputtwosymbol = getcurrencysymbol(inputtwo)
                 return(inputtwo,inputtwosymbol)
